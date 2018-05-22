@@ -1,0 +1,65 @@
+.banner {
+  z-index: 100;
+
+  .brand {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 80px;
+  }
+
+  .logo-svg {
+    @include shadow;
+
+    .cls-1 {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 5px;
+    }
+  }
+
+  .nav-primary {
+    position: fixed;
+    top: 10px;
+    right: 0;
+
+    .nav {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .nav-title {
+      @include textShadow;
+      font-size: 24px;
+      text-align: right;
+      padding: 5px 20px 5px 0;
+    }
+
+    a {
+      display: block;
+      position: relative;
+
+      .hover-el {
+        width: 50px;
+        height: 1px;
+        background: $brand-primary;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+      }
+    }
+
+    .current-menu-item {
+      .nav-title {
+        color: $brand-primary;
+        text-shadow: none;
+      }
+
+      .hover-el {
+        left: 90%;
+      }
+    }
+  }
+}

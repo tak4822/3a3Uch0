@@ -1,0 +1,16 @@
+.sectionTitle-container {
+  height: 35px;
+  align-items: center;
+  display: flex;
+
+  .deco {
+    height: 100%;
+    width: 6px;
+    box-shadow: $box-shadow;
+    margin-right: 10px;
+  }
+
+  .text-title {
+    font-size: 2rem;
+  }
+}

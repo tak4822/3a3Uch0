@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Optima';
+  src: url('../fonts/optima.woff');
+  font-weight: 400;
+}
+
+h1,
+.nav-title,
+.sectionTitle-container .text-title {
+  font-family: 'Optima', 'Helvetica Neue', 'Segoe UI', sans-serif;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: $text;
+  @include textLight;
+}
+
+a {
+  text-decoration: none;
+  color: $brand-primary;
+  @include textBold;
+}
+
+input {
+  appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  outline: none;
+  border: 0;
+  height: 55px;
+  @include flex-center;
+
+  p {
+    margin-top: 5px;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+}

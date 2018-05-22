@@ -1,0 +1,60 @@
+.first-view {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .first-view-contents {
+    .kakucho-name {
+      @include textShadow;
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 5px;
+    }
+
+    .front-page-text {
+      @include textLight;
+      margin-top: 0;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+
+.second-view {
+  margin-top: 20px;
+  padding: 15px;
+  position: relative;
+
+  .philosophy {
+    @include textBold;
+    font-size: 40px;
+  }
+
+  .philosophy-text {
+    margin-bottom: 20px;
+  }
+
+  .front-view-triangle {
+    @include shadow;
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: -40%;
+    z-index: -2;
+  }
+
+  .cls-1 {
+    fill: #fff;
+  }
+
+  .front-link {
+    padding: 20px;
+    display: block;
+    margin: 30px auto 40px;
+    text-align: center;
+    color: $brand-primary;
+  }
+}
