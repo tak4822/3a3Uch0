@@ -17,6 +17,7 @@
         'position' => get_post_meta( get_the_ID(), 'position', true ),
         'name' => get_post_meta( get_the_ID(), 'name', true ),
         'introduction' => get_post_meta( get_the_ID(), 'introduction', true ),
+        'image' => get_the_post_thumbnail_url(get_the_ID(), 'full')
 
         ])
 

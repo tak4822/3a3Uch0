@@ -1,19 +1,21 @@
 <div class="member-container">
     <div class="member-pic">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="15516.826 5913.777 633.783 631.543">
+        <div class="clipped-img" >
+            <img src="{{ $image }}" alt="">
+        </div>
+        <svg height="0" width="0" viewBox="0 0 500 500">
             <defs>
-                <style>
-                    .cls-1 {
-                        fill: #fff;
-                    }
-                </style>
+                <clipPath id="member-clip" clipPathUnits="objectBoundingBox">
+                    <polygon points="0.7 0.12, 0.83 0.63, 0.51 1, 0.16 0.72, 0.32 0.39, 0.33 0" />
+                </clipPath>
             </defs>
-            <path id="Path_49" data-name="Path 49" class="cls-1" d="M15653.671,6048.389l-52.428,263.841,207.446,206.477,217.5-226.447-17.889-188.884-229.316,79.545Z" transform="translate(453.292 13509.6) rotate(-47)"/>
         </svg>
     </div>
     <div class="member-contents">
-        <p class="position">{{ $position }}</p>
-        <p class="name">{{ $name }}</p>
+        <div class="header">
+            <p class="position">{{ $position }}</p>
+            <p class="name">{{ $name }}</p>
+        </div>
         <p class="introduction">{{ $introduction }}</p>
     </div>
 </div>
