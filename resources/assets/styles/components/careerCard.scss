@@ -1,0 +1,66 @@
+.careerCard-container {
+  width: 100%;
+  box-shadow: $box-shadow;
+  padding: 20px 20px 12px;
+  margin-bottom: 30px;
+
+  .title-container {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .deco {
+      height: 100%;
+      width: 5px;
+      background: $brand-primary;
+    }
+
+    .position {
+      font-size: 1.4rem;
+      margin-left: 10px;
+    }
+  }
+
+  .leadDesc {
+    line-height: 1.6rem;
+  }
+
+  .expandButton {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    .buttonText {
+      @include textBold;
+    }
+
+    .arrow {
+      width: 6px;
+      margin-left: 10px;
+    }
+  }
+
+  .detail-container {
+    display: none;
+    @include textLight;
+    margin: 20px auto;
+
+    .cta {
+      width: 100%;
+      height: 50px;
+      background: $brand-primary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2px;
+      margin: 10px auto;
+
+      .buttonText {
+        color: white;
+        @include textBold;
+      }
+    }
+  }
+}

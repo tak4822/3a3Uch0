@@ -8,7 +8,8 @@ h1,
 .nav-title,
 .sectionTitle-container .text-title,
 .news-wrapper .date,
-.news-wrapper .title {
+.news-wrapper .title,
+.careerCard-container .position {
   font-family: 'Optima', 'Helvetica Neue', 'Segoe UI', sans-serif;
   font-weight: 400;
 }
@@ -60,4 +61,5 @@ button {
 .main {
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 100px;
 }
