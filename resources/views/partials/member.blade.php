@@ -1,4 +1,4 @@
-<div class="member-container">
+<article class="member-container">
     <div class="member-pic">
         <div class="clipped-img" >
             <img src="{{ $image }}" alt="">
@@ -18,4 +18,4 @@
         </div>
         <p class="introduction">{{ $introduction }}</p>
     </div>
-</div>
+</article>

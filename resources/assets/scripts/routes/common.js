@@ -1,5 +1,8 @@
+import shortenNewsString from '../modules/shortenNewsString';
+
 export default {
   init() {
+    shortenNewsString();
     // JavaScript to be fired on all pages
   },
   finalize() {

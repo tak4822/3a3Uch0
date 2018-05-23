@@ -6,7 +6,9 @@
 
 h1,
 .nav-title,
-.sectionTitle-container .text-title {
+.sectionTitle-container .text-title,
+.news-wrapper .date,
+.news-wrapper .title {
   font-family: 'Optima', 'Helvetica Neue', 'Segoe UI', sans-serif;
   font-weight: 400;
 }
@@ -19,7 +21,6 @@ body {
   margin: 0;
   padding: 0;
   font-size: 13px;
-  overflow-x: hidden;
 }
 
 p {
@@ -54,4 +55,9 @@ button {
     font-size: 1.3rem;
     font-weight: 400;
   }
+}
+
+.main {
+  padding-left: 15px;
+  padding-right: 15px;
 }
