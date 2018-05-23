@@ -1,3 +1,4 @@
+@php /* Template Name: About */ @endphp
 @extends('layouts.app')
 
 @section('content')

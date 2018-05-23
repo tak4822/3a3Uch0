@@ -1,8 +1,13 @@
 .career {
   margin-bottom: 50px;
 
+  .section-title {
+    @include textBold;
+    margin-top: 30px;
+  }
+
   .page-contents {
-    margin: 20px auto 40px;
+    margin: 10px auto 40px;
   }
 }
 

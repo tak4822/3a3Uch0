@@ -2,12 +2,14 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="regular-container career">
+    <section class="regular-container career">
         @component('partials.sectionTitle')
             @slot('title')
                 Career
             @endslot
         @endcomponent
+
+        <p class="section-title">採用情報</p>
 
         <div class="page-contents">
             @while(have_posts()) @php the_post() @endphp
@@ -30,5 +32,5 @@
             @endwhile
         </div>
 
-    </div>
+    </section>
 @endsection
