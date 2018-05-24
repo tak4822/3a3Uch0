@@ -4,6 +4,29 @@
     @include textBold;
   }
 
+  .contents-wrapper {
+    @media screen and (min-width: $desktop-sm) {
+      display: flex;
+    }
+  }
+
+  .contents-left {
+    @media screen and (min-width: $desktop-sm) {
+      flex: 1;
+    }
+  }
+
+  .form {
+    @media screen and (min-width: $desktop-sm) {
+      width: 50%;
+      margin-top: 40px;
+      margin-left: 40px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 650px;
+    }
+  }
+
   .wpcf7 {
     width: 100%;
 
@@ -44,6 +67,9 @@
         select {
           width: 100%;
           font-size: 1rem;
+          appearance: none;
+          background: none;
+          border: none;
 
           &:focus {
             outline: none;
