@@ -13,6 +13,10 @@ use Roots\Sage\Template\BladeProvider;
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+
+    $products_data = Controllers\PageProducts::products_data();
+
+    wp_localize_script('sage/main.js', 'products_data', $products_data);
 }, 100);
 
 /**
@@ -48,6 +52,9 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
      */
     add_theme_support('post-thumbnails');
+    set_post_thumbnail_size(880, 500, true);
+    add_image_size('normal_thumb', 880, 500, true); // For using if statement in blade
+    add_image_size('small_thumb', 600, 400, true);
 
     /**
      * Enable HTML5 markup support
