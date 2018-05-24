@@ -7,6 +7,11 @@
     top: 15px;
     left: 15px;
     width: 80px;
+    @media screen and (min-width: $tablet) {
+      top: 20px;
+      left: 20px;
+      width: 100px;
+    }
   }
 
   .logo-svg {
@@ -20,9 +25,13 @@
   }
 
   .nav-primary {
+    z-index: 100;
     position: fixed;
     top: 10px;
     right: 0;
+    @media screen and (min-width: $tablet) {
+      top: 15px;
+    }
 
     .nav {
       margin: 0;
@@ -35,6 +44,12 @@
       font-size: 24px;
       text-align: right;
       padding: 5px 20px 5px 0;
+      @media screen and (min-width: $tablet) {
+        font-size: 28px;
+      }
+      @media screen and (min-width: $tablet-bg) {
+        padding: 5px 25px 5px 0;
+      }
     }
 
     a {
