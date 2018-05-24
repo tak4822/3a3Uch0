@@ -5,12 +5,28 @@
   box-shadow: inset 1px 1px 7px rgba(0, 0, 0, 0.2);
   overflow-x: hidden;
   overflow-y: scroll;
+  @media screen and (min-width: $tablet) {
+    margin: 20px auto 70px;
+    padding: 10px;
+  }
+  @media screen and (min-width: $desktop-sm) {
+    margin-bottom: 100px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 500px;
+  }
 
   .news-wrapper {
     margin: 10px;
     border-bottom: 1px solid #ebebeb;
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: $tablet) {
+      margin-top: 20px;
+    }
+    @media screen and (min-width: $desktop-sm) {
+      margin: 20px;
+    }
 
     .date {
       font-size: 0.8rem;
@@ -20,6 +36,9 @@
     .title {
       font-size: 1.2rem;
       margin-bottom: 8px;
+      @media screen and (min-width: $tablet) {
+        font-size: 1.4rem;
+      }
     }
 
     .leadText {

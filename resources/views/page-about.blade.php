@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="regular-container">
+    <div class="regular-container about">
         @component('partials.sectionTitle')
             @slot('title')
                 Member

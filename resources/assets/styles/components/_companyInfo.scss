@@ -3,17 +3,37 @@
     margin-top: 30px;
     margin-bottom: 50px;
     padding: 0 10px 0 20px;
-    list-style-type: none;
+    @media screen and (min-width: $tablet-bg) {
+      display: flex;
+      padding: 0 10px 0 0;
+      margin-bottom: 80px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 200px;
+    }
+
+    .list-right {
+      @media screen and (min-width: $tablet-bg) {
+        margin-left: 120px;
+      }
+      @media screen and (min-width: $desktop-sm) {
+        margin-left: 160px;
+      }
+      @media screen and (min-width: $desktop) {
+        margin-left: 200px;
+      }
+    }
 
     .info-row {
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-      margin: 20px auto;
+      margin: 25px auto;
 
       .info-key {
         width: 100px;
-        @include textLight;
+        @include textBold;
+        line-height: 1.4rem;
       }
 
       .info-value {

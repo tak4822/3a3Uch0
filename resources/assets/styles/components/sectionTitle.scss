@@ -2,15 +2,34 @@
   height: 35px;
   align-items: center;
   display: flex;
+  @media screen and (min-width: $tablet) {
+    height: 45px;
+  }
+  @media screen and (min-width: $tablet-bg) {
+    margin-left: -25px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 50px;
+  }
 
   .deco {
     height: 100%;
     width: 6px;
     box-shadow: $box-shadow;
     margin-right: 10px;
+    @media screen and (min-width: $tablet) {
+      width: 8px;
+      margin-right: 15px;
+    }
   }
 
   .text-title {
     font-size: 2rem;
+    @media screen and (min-width: $tablet) {
+      font-size: 2.5rem;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 2.8rem;
+    }
   }
 }
