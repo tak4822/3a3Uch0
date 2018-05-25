@@ -27,6 +27,17 @@ class App extends Controller
         return preg_match($pattern, $_SERVER['HTTP_USER_AGENT']);
     }
 
+    public function current_template() {
+        if (is_front_page()) return 'frontpage';
+        if (is_page('about')) return 'about';
+        if (is_page('products')) return 'products';
+        if (is_page('career')) return 'career';
+        if (is_page('contact')) return 'contact';
+        if (is_404()) return '404';
+
+        return 'else';
+    }
+
     public static function title()
     {
         if (is_home()) {

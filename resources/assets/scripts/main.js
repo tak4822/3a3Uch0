@@ -1,24 +1,33 @@
-// import external dependencies
 import 'jquery';
 
-// Import everything from autoload
-import "./autoload/**/*"
+import firstTransition from './modules/firstTransition';
+firstTransition();
 
-// import local dependencies
-import Router from './util/Router';
-import common from './routes/common';
-import home from './routes/home';
-import about from './routes/about';
+import barbaInit from './barba/init';
+import frontPage from './views/frontPage';
+import products from './views/products';
+import about from './views/about';
+import career from './views/career';
+import contact from './views/contact';
 
-/** Populate Router instance with DOM routes */
-const routes = new Router({
-  // All pages
-  common,
-  // Home page
-  home,
-  // About Us page, note the change from about-us to aboutUs.
+import common from './common';
+
+const views = [
+  frontPage,
+  products,
   about,
-});
+  career,
+  contact,
+];
 
 // Load Events
-jQuery(document).ready(() => routes.loadEvents());
+jQuery(document).ready(() => {
+  common();
+});
+
+// 最初のページローディングのスピードはこっちで調節
+// ページ間でのトランジションはBarba.jsで調節
+$(window).on('load', function() {
+  barbaInit(views);
+})
+
