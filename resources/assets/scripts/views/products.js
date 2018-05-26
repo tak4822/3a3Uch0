@@ -1,3 +1,4 @@
+import { displacementSlider } from "../modules/slider";
 
 export default {
   namespace: 'products',
@@ -7,6 +8,17 @@ export default {
   },
   onEnterCompleted: function() {
     // このページのトランジションが完了した時。
+    // eslint-disable-next-line no-undef
+    const data = products_data;
+    console.log('datat', data);
+    const el = document.getElementById('slider');
+    const imgs = Array.from(el.querySelectorAll('img'));
+    new displacementSlider({
+      data,
+      parent: el,
+      images: imgs,
+      disp: require('../../images/displacement.jpg'),
+    });
 
 
   },
