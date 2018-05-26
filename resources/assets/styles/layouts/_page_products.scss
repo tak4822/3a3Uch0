@@ -1,40 +1,71 @@
-.product-layer {
+.regular-container.products {
+  padding: 0;
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: -2;
-  // background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+  overflow: hidden;
+
+  .shape-overlays {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    z-index: 1;
+
+    .shape-overlays__path:nth-of-type(1) {
+      fill: $brand-primary;
+    }
+
+    .shape-overlays__path:nth-of-type(2) {
+      fill: $head;
+    }
+  }
 
   .slider-container {
     width: 100%;
     height: 100vh;
     position: relative;
 
-    .slider-line {
-      background: $brand-primary;
-      position: absolute;
-      left: calc(10% + 65px);
-      width: 1px;
-    }
-
-    .line-top {
-      height: 20%;
-      top: 0;
-    }
-
-    .line-bottom {
-      height: 20%;
-      bottom: 0;
-    }
-
     .slider-wrapper {
       width: 90%;
       position: absolute;
-      top: 40%;
+      top: 35%;
       right: 0;
       height: 200px;
       box-shadow: 0 3px 8px 4px rgba(0, 0, 0, 0.1);
+      @media screen and (min-width: 400px) {
+        height: 250px;
+      }
+      @media screen and (min-width: $tablet) {
+        height: 350px;
+        top: 30%;
+      }
+      @media screen and (min-width: 700px) {
+        height: 400px;
+      }
+      @media screen and (min-width: 800px) {
+        height: 450px;
+      }
+      @media screen and (min-width: $tablet-bg) {
+        height: 500px;
+      }
+      @media screen and (min-width: $desktop-sm) {
+        width: 600px;
+        height: 350px;
+        top: calc(50% - 175px);
+        right: calc(50% - 300px);
+      }
+      @media screen and (min-width: $desktop-md) {
+        width: 840px;
+        height: 490px;
+        top: calc(50% - 245px);
+        right: calc(50% - 420px);
+      }
 
       .product-name {
         font-size: 3rem;
@@ -44,9 +75,25 @@
         left: 40px;
         transform-origin: top left;
         transform: rotate(-90deg);
-        z-index: 3;
-        height: 30px;
+        z-index: 11;
+        height: 60px;
         align-self: center;
+        @media screen and (min-width: $tablet) {
+          font-size: 4rem;
+          top: 100px;
+          left: 56px;
+        }
+        @media screen and (min-width: $tablet-bg) {
+          font-size: 6rem;
+          left: 120px;
+        }
+        @media screen and (min-width: $desktop-sm) {
+          font-size: 4rem;
+        }
+        @media screen and (min-width: $desktop-md) {
+          font-size: 5.5rem;
+          top: 140px;
+        }
       }
 
       img {
@@ -64,39 +111,72 @@
 
   .contents-container {
     display: none;
+    position: relative;
     width: 90%;
-    margin: auto;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
+    z-index: 100;
 
     .content-top {
-      margin: 30px auto;
+      margin: 50px auto;
 
       p {
         text-align: center;
         color: white;
+        @media screen and (min-width: $tablet) {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .contents-wrapper {
+      @media screen and (min-width: $tablet-bg) {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
       }
     }
 
     .content-left {
       width: 100%;
+      @media screen and (min-width: $tablet) {
+        margin: 100px auto;
+      }
+      @media screen and (min-width: $tablet-bg) {
+        width: 300px;
+        margin: 0;
+      }
 
       img {
+        height: 100%;
         width: 100%;
+        object-fit: cover;
       }
     }
 
     .content-right {
       width: 100%;
       margin: 30px auto;
+      @media screen and (min-width: $tablet-bg) {
+        margin: 0 0 0 50px;
+        width: 400px;
+      }
 
       p {
+        padding-top: 10px;
+        padding-bottom: 10px;
         color: white;
+        @media screen and (min-width: $tablet) {
+          font-size: 0.9rem;
+        }
       }
 
       .store-button-container {
         display: flex;
         align-items: center;
         height: 40px;
+        @media screen and (min-width: $tablet) {
+          height: 50px;
+        }
 
         img {
           height: 100%;
@@ -119,23 +199,161 @@ canvas {
 
 #pagination {
   position: absolute;
-  top: calc(40% + 220px);
+  top: calc(35% + 240px);
+  right: 0;
   display: flex;
-  width: 100%;
-  justify-content: center;
+  width: calc(90% - 58px);
+  justify-content: flex-start;
+  @media screen and (min-width: 400px) {
+    top: calc(35% + 290px);
+  }
+  @media screen and (min-width: $tablet) {
+    top: calc(30% + 390px);
+    width: calc(90% - 80px);
+  }
+  @media screen and (min-width: 700px) {
+    top: calc(30% + 440px);
+  }
+  @media screen and (min-width: 800px) {
+    top: calc(30% + 490px);
+  }
+  @media screen and (min-width: $tablet-bg) {
+    top: calc(30% + 580px);
+    width: calc(90% - 160px);
+  }
+  @media screen and (min-width: $desktop-sm) {
+    top: calc(50% + 220px);
+    width: calc(50% + 300px - 150px);
+  }
+  @media screen and (min-width: $desktop-md) {
+    top: calc(50% + 320px);
+    width: calc(50% + 420px - 160px);
+  }
 
   button {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
+    width: 12px;
+    height: 13px;
     background: white;
     box-shadow: $box-shadow;
-    margin: 10px;
+    margin-right: 25px;
+    @media screen and (min-width: $tablet) {
+      width: 17px;
+      height: 18px;
+      margin-right: 40px;
+    }
+    @media screen and (min-width: $tablet-bg) {
+      width: 22px;
+      height: 23px;
+      margin-right: 60px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    }
+    @media screen and (min-width: $desktop-sm) {
+      width: 14px;
+      height: 15px;
+    }
 
     &.active {
-      box-shadow: none;
       background: $brand-primary;
     }
   }
 }
 
+.control-buttons {
+  cursor: pointer;
+  position: absolute;
+  left: calc(10% + 55px);
+  transform-origin: left top;
+  transform: rotate(-90deg);
+  @media screen and (min-width: $tablet) {
+    left: calc(10% + 75px);
+  }
+  @media screen and (min-width: $tablet-bg) {
+    left: calc(10% + 155px);
+  }
+  @media screen and (min-width: $desktop-sm) {
+    transform: rotate(0);
+  }
+
+  &#pre {
+    top: 12%;
+    @media screen and (min-width: $tablet-bg) {
+      top: 10%;
+    }
+    @media screen and (min-width: $desktop-sm) {
+      top: 48%;
+      left: calc(50% - 480px);
+    }
+    @media screen and (min-width: $desktop-md) {
+      left: calc(50% - 680px);
+    }
+  }
+
+  &#next {
+    bottom: 10px;
+    @media screen and (min-width: $tablet) {
+      bottom: 5%;
+    }
+    @media screen and (min-width: $desktop-sm) {
+      top: 48%;
+      bottom: auto;
+      left: auto;
+      right: calc(50% - 480px);
+    }
+    @media screen and (min-width: $desktop-md) {
+      right: calc(50% - 680px);
+    }
+  }
+
+  .control-buttons-text {
+    color: $brand-primary;
+    font-size: 1.2rem;
+
+    @media screen and (min-width: $tablet-bg) {
+      font-size: 1.4rem;
+    }
+    @media screen and (min-width: $tablet-bg) {
+      font-size: 1.8rem;
+    }
+    @media screen and (min-width: $desktop-sm) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.close-button {
+  z-index: 300;
+  $size: 50px;
+  height: $size;
+  width: $size;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  box-sizing: border-box;
+  line-height: $size;
+  display: none;
+  overflow: hidden;
+
+  .bar {
+    $width: 35px;
+    $height: 4px;
+    transform: rotate(0);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -$height/2;
+    margin-left: -$width/2;
+    display: block;
+    height: $height;
+    width: $width;
+    background-color: $brand-primary;
+    transition: all 0.25s ease-out;
+  }
+
+  &:hover,
+  &:active {
+    .bar {
+      transform: rotate(0deg);
+    }
+  }
+}

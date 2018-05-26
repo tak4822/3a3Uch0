@@ -130,6 +130,22 @@ export const displacementSlider = function(opts) {
     const nextSlideTitle =data[slideId].title;
     const slideTitleEl = document.getElementById('slide-title');
     const strLen = charCount(data[slideId].title);
+    let originalFontSize = 3;
+
+    if (window.matchMedia('(min-width:550px)').matches) {
+      originalFontSize = 4;
+    }
+    if (window.matchMedia('(min-width:900px)').matches) {
+      originalFontSize = 6;
+    }
+    if (window.matchMedia('(min-width:1025px)').matches) {
+      originalFontSize = 4;
+    }
+    if (window.matchMedia('(min-width:1400px)').matches) {
+      originalFontSize = 5.5;
+    }
+
+    const smallerSize = originalFontSize * 0.6;
     TweenLite.fromTo( slideTitleEl, 0.5,
       {
         autoAlpha: 1,
@@ -144,9 +160,9 @@ export const displacementSlider = function(opts) {
         onComplete: function () {
           slideTitleEl.innerHTML = nextSlideTitle;
           if(strLen > 9) {
-            slideTitleEl.style.fontSize = '2rem';
+            slideTitleEl.style.fontSize = `${smallerSize}rem`;
           } else {
-            slideTitleEl.style.fontSize = '3rem';
+            slideTitleEl.style.fontSize = `${originalFontSize}rem`;
           }
 
           TweenLite.to( slideTitleEl, 0.5, {
@@ -160,7 +176,7 @@ export const displacementSlider = function(opts) {
   let isAnimating = false;
   let addEvents = function(){
 
-    let pagButtons = Array.from(document.getElementById('pagination').querySelectorAll('button'));
+    const pagButtons = Array.from(document.getElementById('pagination').querySelectorAll('button'));
 
     pagButtons.forEach( (el) => {
 
@@ -177,7 +193,42 @@ export const displacementSlider = function(opts) {
         }
       });
     });
-  };
+
+    const controlButtons = document.querySelectorAll('.control-buttons');
+
+    controlButtons.forEach( (el) => {
+
+      el.addEventListener('click', function () {
+        console.log('click', this.id);
+        if (!isAnimating) {
+          isAnimating = true;
+          const currentPagenationEL = document.getElementById('pagination').querySelectorAll('.active')[0];
+          const currentId = parseInt(currentPagenationEL.dataset.slide, 10);
+
+          currentPagenationEL.className = '';
+
+          let nextId;
+          const maxId = data.length - 1;
+
+          if(this.id === 'pre') {
+            if(currentId === 0) {
+              nextId = maxId;
+            } else {
+              nextId = currentId - 1;
+            }
+          } else {
+            if(currentId === maxId) {
+              nextId = 0;
+            } else {
+              nextId = currentId + 1;
+            }
+          }
+          pagButtons[nextId].className = 'active';
+          animateSlider(nextId);
+        }
+      });
+    });
+  } // end addEvents
 
   addEvents();
 

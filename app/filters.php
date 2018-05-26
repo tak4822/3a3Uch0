@@ -68,3 +68,11 @@ add_filter('comments_template', function ($comments_template) {
     );
     return template_path(locate_template(["views/{$comments_template}", $comments_template]) ?: $comments_template);
 }, 100);
+
+//add_filter( 'allowed_http_origins', 'add_allowed_origins' );
+//function add_allowed_origins( $origins ) {
+//    $origins[] = 'http://kakucho.test';
+//    $origins[] = 'https://kakucho.com';
+//    $origins[] = 'http://localhost:3000'; //TODO: delete this line
+//    return $origins;
+//}

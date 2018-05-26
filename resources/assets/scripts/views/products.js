@@ -1,4 +1,5 @@
 import { displacementSlider } from "../modules/slider";
+import slideToDetail from '../modules/sliderToDetail';
 
 export default {
   namespace: 'products',
@@ -19,6 +20,8 @@ export default {
       images: imgs,
       disp: require('../../images/displacement.jpg'),
     });
+
+    slideToDetail(data);
 
 
   },
