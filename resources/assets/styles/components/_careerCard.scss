@@ -2,6 +2,7 @@
   width: 100%;
   padding: 20px 20px 12px;
   margin-bottom: 30px;
+  transition: all 3s ease;
 
   .title-container {
     width: 100%;
@@ -48,8 +49,9 @@
 
   .detail-container {
     display: none;
+    opacity: 0;
     @include textLight;
-    margin: 20px auto;
+    padding: 20px auto;
 
     .cta {
       width: 100%;
