@@ -33,7 +33,9 @@
                     <p class="philosophy-text">私たちが暮らすこの世界は、それを新しい次元へ導こうとする多くの人や企業の絶え間ぬ努力によって日々進化を続けております。</p>
                     <p class="philosophy-text">それにもかかわらず、21世紀となる今尚、世界は際限なく成長を続けます。<br/>それくらい私たちの世界は底知れぬ成長ポテンシャルをもっております。</p>
                     <p class="philosophy-text">KAKUCHOは、今私たちの目の前に広がるこの世界をさらに拡張し、誰も目撃したことのない新しい社会の実現を目指し、私たち人類のより豊かな生活を確立します。</p>
-                    <a class="front-link" href="/products">サービスを見る</a>
+                    <a id="nextPageButton" class="front-link" href="/products">
+                        <p class="link-text">サービスを見る</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -41,6 +43,7 @@
             <polygon class="cls-1" points="166.6,75 39.3,295.5 294,295.5">
                 <animate id="animation-to-long-tri" begin="indefinite" dur="1000ms" fill="freeze" attributeName="points" to="258.8,258.8 98.7,30.8 104.2,375.3 "/>
                 {{--<animate id="animation-to-green" begin="indefinite" fill="freeze" attributeName="fill" dur="500ms" to="#53B848"></animate>--}}
+                <animate id="animation-for-cta" begin="indefinite" dur="600ms" fill="freeze" attributeName="points" to="247.4,14.3 42.4,271.5 299.6,386"/>
             </polygon>
         </svg>
     </section>

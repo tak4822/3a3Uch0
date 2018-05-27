@@ -1,8 +1,13 @@
-import { TweenLite, Power1, Expo } from 'gsap/TweenMax';
+import { TweenLite, Power1, Expo, Back } from 'gsap/TweenMax';
+import Barba from 'barba.js/dist/barba.min';
 
 export default function() {
   // const windowHeight =  $(window).height();
   let isScrolled = false;
+
+  document.getElementsByTagName("BODY")[0].addEventListener('click', function() {
+    transionToSecondView();
+  })
 
   window.onscroll = function() {
     if (!isScrolled) {
@@ -20,8 +25,6 @@ const firstView = $('.first-view');
 
 const showText = () => {
   const philosophyText = $('.philosophy-text-container');
-  philosophyText.css('opacity', 1);
-
   TweenLite.fromTo(philosophyText, 0.8,
     {
       autoAlpha: 0,
@@ -33,8 +36,92 @@ const showText = () => {
       filter: 'blur(0px)',
       y: 0,
       ease: Expo.easeIn,
+      onComplete: showButton,
     });
 };
+
+
+const showButton = () => {
+  // show Button
+  const ctaButton = document.getElementById('nextPageButton');
+  const buttonText = ctaButton.querySelector('.link-text');
+  // box-shadow: $box-shadow;
+  TweenLite.fromTo(ctaButton, 0.6, {
+    boxShadow: 'rgba(0, 0, 0, 0) 0 1px 3px',
+  }, {
+    boxShadow: 'rgba(0, 0, 0, 0.2) 0 1px 3px',
+    ease: Expo.easeIn,
+  });
+  // color: $brand-primary;
+  TweenLite.fromTo(buttonText, 0.8, {
+    alpha: 0,
+    y: 10,
+  }, {
+    delay: 1,
+    y: 0,
+    alpha: 1,
+    onComplete: atachEventToButton,
+  });
+}
+
+const atachEventToButton = () => {
+  const ctaButton = document.getElementById('nextPageButton');
+  const animationForCTA = document.getElementById('animation-for-cta');
+  const svg = document.querySelector('.front-view-triangle');
+
+  let hasBeenEntered = false;
+  ctaButton.addEventListener("mouseenter", function() {
+    if(!hasBeenEntered) {
+      hasBeenEntered = true;
+      TweenLite.to(svg, 0.4, {
+        transformOrigin: '50% 50%',
+        rotationZ: '-=200_cw',
+        ease: Expo.easeInOut,
+        onStart: function() {
+          setTimeout(() => {
+            animationForCTA.beginElement(); // start changing shape
+          },200)
+        },
+      })
+    }
+  });
+
+  ctaButton.addEventListener("click", function(e) {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+
+    // delete text
+    const philosophyLetter = $('.philosophy-letter');
+    TweenLite.to( philosophyLetter, 0.6, {
+      autoAlpha: 0,
+      filter: 'blur(15px)',
+      x: 50,
+      ease: Expo.easeIn,
+    });
+
+    const philosophyText = $('.philosophy-text-container');
+    TweenLite.to(philosophyText, 0.6, {
+      delay: 0.2,
+      autoAlpha: 0,
+      filter: 'blur(5px)',
+      y: -20,
+      ease: Expo.easeIn,
+      onComplete: function() {
+        // scale up svg
+        TweenLite.to(svg, 0.4, {
+          transformOrigin: '50% 50%',
+          scale: 60,
+          ease: Back.easeInOut,
+          onComplete: function() {
+            setTimeout(() => {
+              Barba.Pjax.goTo('/products');
+            }, 500)
+          },
+        })
+      },
+    });
+  });
+}
 
 const showPhilosophy = () => {
   const philosophyLetter = $('.philosophy-letter');
@@ -51,7 +138,6 @@ const showPhilosophy = () => {
       ease: Expo.easeIn,
       onComplete: showText,
     });
-  $('.philosophy').css('opacity', 1);
 };
 
 const triangleAnimationTween = (el) => {
@@ -94,6 +180,10 @@ const triangleAnimationTween = (el) => {
     y: YAmount,
     ease: Expo.easeIn,
     onComplete: showPhilosophy,
+    onStart: function() {
+      const animationToLongTri = document.getElementById('animation-to-long-tri');
+      animationToLongTri.beginElement(); // start changing shape
+    },
   });
 }
 
@@ -103,16 +193,12 @@ const triangleAnimation = () => {
     ease: Power1.easeInOut,
     onComplete: function() {
       triangleAnimationTween(triangle);
-      const animationToLongTri = document.getElementById('animation-to-long-tri');
-      animationToLongTri.beginElement(); // start changing shape
     },
   });
 };
 
 const shadowOutKakucho = () => {
-  TweenLite.fromTo(
-    kakucho,
-    0.6,
+  TweenLite.fromTo(kakucho, 0.6,
     {
       textShadow: 'rgba(0, 0, 0, 0.2) 0 1px 2px',
     },
