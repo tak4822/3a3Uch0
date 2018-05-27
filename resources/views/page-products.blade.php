@@ -26,11 +26,7 @@
 
             <div id="pagination" style="">
                 @for ($i = 0; $i < count($data); $i++)
-                    @if($i === 0 )
-                        <button class="active" data-slide="{{ $i }}"></button>
-                    @else
-                        <button data-slide="{{ $i }}"></button>
-                    @endif
+                    <button data-slide="{{ $i }}"></button>
                 @endfor
             </div>
         </div>

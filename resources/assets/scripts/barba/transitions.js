@@ -19,7 +19,7 @@ export default {
     //ここでは、animateを使って、fadeoutさせている。
     // $('.transition-overlay').fadeIn(300);
     // $('.loader').fadeIn(100);
-    return $(this.oldContainer).animate({ opacity: 0 },{duration:'fast'}).promise();
+    return $(this.oldContainer).animate({ opacity: 0 },{duration: 500}).promise();
   },
 
   fadeIn: function() {

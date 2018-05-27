@@ -6,7 +6,6 @@ import setting from './setting';
 
 export default function(views) {
   setting();
-  console.log('init');
 
   Barba.Dispatcher.on('newPageReady', BarbaOnEveryPage);
   Barba.Dispatcher.on('linkClicked', BarbaLinkHandler);
