@@ -15,7 +15,6 @@
   .deco {
     height: 100%;
     width: 6px;
-    box-shadow: $box-shadow;
     margin-right: 10px;
     @media screen and (min-width: $tablet) {
       width: 8px;
@@ -24,7 +23,9 @@
   }
 
   .text-title {
+    margin: 0;
     font-size: 2rem;
+    padding-top: 4px;
     @media screen and (min-width: $tablet) {
       font-size: 2.5rem;
     }

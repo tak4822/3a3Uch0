@@ -15,7 +15,7 @@ export default function() {
 
   const firstViewText = $('.text-anim-wrapper.first').find('.white-block');
   TweenLite.to(firstViewText, 0.8, {
-    y: '-100%',
+    y: -100,
     ease: Power1.easeIn,
   });
 

@@ -23,7 +23,8 @@ class PageAbout extends Controller
             'post_type' => 'news',
 
         );
-        return new WP_Query( $args );
+        $query = new WP_Query($args);
+        return $query;
     }
 
 }

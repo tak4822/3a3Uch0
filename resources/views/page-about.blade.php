@@ -9,10 +9,6 @@
             @endslot
         @endcomponent
 
-        {{--<pre>--}}
-            {{--{{ print_r($get_news) }}--}}
-        {{--</pre>--}}
-
         @while($get_member->have_posts()) @php($get_member->the_post())
         @component('partials.member', [
             'position' => get_post_meta( get_the_ID(), 'position', true ),
@@ -29,14 +25,16 @@
             @endslot
         @endcomponent
         <section class="news-container">
-            @while($get_news->have_posts()) @php($get_news->the_post())
-            @component('partials.news', [
-                'title' => get_the_title(),
-                'date' => get_the_date( 'Y. m. d', get_the_ID() ),
-                'leadText' => get_post_meta( get_the_ID(), 'leadText', true ),
-            ])
-            @endcomponent
-            @endwhile
+            <div class="news-box">
+                @php($i = 0) @while($get_news->have_posts() && $i < 5) @php($get_news->the_post())
+                @component('partials.news', [
+                    'title' => get_the_title(),
+                    'date' => get_the_date( 'Y. m. d', get_the_ID() ),
+                    'leadText' => $leadText = get_field('leadText'),
+                ])
+                @endcomponent
+                @php($i += 1) @endwhile
+            </div>
         </section>
 
         @component('partials.sectionTitle')

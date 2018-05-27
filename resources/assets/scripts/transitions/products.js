@@ -1,7 +1,5 @@
 import { TweenLite, Expo, Power2 } from 'gsap/TweenMax';
 
-
-
 export default {
   mobileIn() {
     this.shadowPagenation();

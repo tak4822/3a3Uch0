@@ -1,4 +1,6 @@
-import shortenNewsString from '../modules/shortenNewsString'
+// import shortenNewsString from '../modules/shortenNewsString';
+import transition from '../transitions/about';
+
 export default {
   namespace: 'about',
   onEnter: function() {
@@ -6,8 +8,10 @@ export default {
   },
   onEnterCompleted: function() {
     // このページのトランジションが完了した時。
-    console.log('about');
-    shortenNewsString();
+    transition.in();
+    transition.scroll();
+    // shortenNewsString();
+
 
 
   },
