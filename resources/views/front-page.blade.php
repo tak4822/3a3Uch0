@@ -24,17 +24,6 @@
         </div>
         <div class="front-view-wrapper">
             <div class="second-view">
-                {{--<svg class="front-view-triangle"  xmlns="http://www.w3.org/2000/svg" viewBox="11916.184 5967.636 449.729 579.558">--}}
-                    {{--<polygon id="front-triangle" class="cls-1" points="291,288 163.7,508.5 418.3,508.5 "/>--}}
-                    {{--<path id="front-triangle" data-name="Path 47" class="cls-1" d="M11975.483,6087.673l299.758,414.521,149.971-579.558Z" transform="translate(-59.3 45)"/>--}}
-                {{--</svg>--}}
-                <svg class="front-view-triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 333.3 397.9">
-                    <polygon class="cls-1" points="166.6,75 39.3,295.5 294,295.5">
-                         <animate id="animation-to-long-tri" begin="indefinite" dur="1000ms" fill="freeze" attributeName="points" to="258.8,258.8 98.7,30.8 104.2,375.3 "/>
-                        {{--<animate id="animation-to-green" begin="indefinite" fill="freeze" attributeName="fill" dur="500ms" to="#53B848"></animate>--}}
-                    </polygon>
-                </svg>
-
                 <div class="philosophy">
                     <p class="philosophy-letter">現実世界を<br/>拡張し、<br/>新しい社会の<br/>実現を目指す</p>
                 </div>
@@ -48,5 +37,11 @@
                 </div>
             </div>
         </div>
+        <svg class="front-view-triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 333.3 397.9">
+            <polygon class="cls-1" points="166.6,75 39.3,295.5 294,295.5">
+                <animate id="animation-to-long-tri" begin="indefinite" dur="1000ms" fill="freeze" attributeName="points" to="258.8,258.8 98.7,30.8 104.2,375.3 "/>
+                {{--<animate id="animation-to-green" begin="indefinite" fill="freeze" attributeName="fill" dur="500ms" to="#53B848"></animate>--}}
+            </polygon>
+        </svg>
     </section>
 @endsection

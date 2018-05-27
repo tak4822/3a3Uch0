@@ -106,7 +106,6 @@
     "yargs": "~11.0.0"
   },
   "dependencies": {
-    "animejs": "^2.2.0",
     "barba.js": "^1.0.0",
     "gsap": "^2.0.0",
     "jquery": "^3.3.1",

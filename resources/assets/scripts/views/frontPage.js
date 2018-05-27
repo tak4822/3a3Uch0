@@ -4,7 +4,6 @@ import frontTransitions from '../transitions/frontPage';
 export default {
   namespace: 'frontpage',
   onEnter: function() {
-    console.log('front page');
     // このページのcontainerが読み込みを開始した時。
   },
   onEnterCompleted: function() {

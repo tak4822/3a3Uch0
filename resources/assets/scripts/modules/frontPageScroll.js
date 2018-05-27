@@ -1,5 +1,4 @@
 import { TweenLite, Power1, Expo } from 'gsap/TweenMax';
-// import anime from 'animejs';
 
 export default function() {
   // const windowHeight =  $(window).height();
@@ -55,20 +54,55 @@ const showPhilosophy = () => {
   $('.philosophy').css('opacity', 1);
 };
 
+const triangleAnimationTween = (el) => {
+  let scaleAmount = 8;
+
+  if (window.matchMedia('(max-width:900px)').matches) {
+    scaleAmount = 7;
+  }
+  if (window.matchMedia('(max-width:550px)').matches) {
+    scaleAmount = 6;
+  }
+
+  let XAmount = -400;
+  if (window.matchMedia('(max-width:1024px)').matches) {
+    XAmount = -320;
+  }
+  if (window.matchMedia('(max-width:900px)').matches) {
+    XAmount = -240;
+  }
+  if (window.matchMedia('(max-width:550px)').matches) {
+    XAmount = -100;
+  }
+
+  let YAmount = 70;
+  if (window.matchMedia('(max-width:1024px)').matches) {
+    YAmount = -160;
+  }
+  if (window.matchMedia('(max-width:900px)').matches) {
+    YAmount = -100;
+  }
+  if (window.matchMedia('(max-width:550px)').matches) {
+    YAmount = -70;
+  }
+
+  TweenLite.to(el, 0.8, {
+    delay: 0.2,
+    rotationZ: '-=200_cw',
+    scale: scaleAmount,
+    x: XAmount,
+    y: YAmount,
+    ease: Expo.easeIn,
+    onComplete: showPhilosophy,
+  });
+}
+
 const triangleAnimation = () => {
   TweenLite.to(triangle, 1.5, {
     filter: 'drop-shadow(rgba(0, 0, 0, 0.16) 0 1px 2px)', // show triangle
     ease: Power1.easeInOut,
     onComplete: function() {
-      TweenLite.to(triangle, 0.8, {
-        delay: 0.2,
-        rotationZ: '-=200_cw',
-        scale: 8,
-        x: -400,
-        y: 70,
-        ease: Expo.easeIn,
-        onComplete: showPhilosophy,
-      });
+      triangleAnimationTween(triangle);
       const animationToLongTri = document.getElementById('animation-to-long-tri');
       animationToLongTri.beginElement(); // start changing shape
     },
@@ -80,11 +114,11 @@ const shadowOutKakucho = () => {
     kakucho,
     0.6,
     {
-      textShadow: 'rgba(0, 0, 0, 0.2) 0 2px 2px',
+      textShadow: 'rgba(0, 0, 0, 0.2) 0 1px 2px',
     },
     {
       delay: 0.2,
-      textShadow: 'rgba(0, 0, 0, 0) 0 2px 2px',
+      textShadow: 'rgba(0, 0, 0, 0) 0 1px 2px',
       ease: Power1.easeIn,
       onComplete: function() {
         TweenLite.to(firstView, 0.3, {
