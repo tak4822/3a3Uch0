@@ -1,13 +1,13 @@
 import form from '../modules/form'
-
+import transition from '../transitions/contact';
 export default {
   namespace: 'contact',
   onEnter: function() {
-    console.log('contact');
     // このページのcontainerが読み込みを開始した時。
   },
   onEnterCompleted: function() {
     // このページのトランジションが完了した時。
+    transition.in();
     form();
 
 

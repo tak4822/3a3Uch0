@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="295aa1f2-bb97-4b7c-b501-8126d8da186f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/scripts/modules/careerCard.js" afterPath="$PROJECT_DIR$/resources/assets/scripts/modules/careerCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/styles/components/_careerCard.scss" afterPath="$PROJECT_DIR$/resources/assets/styles/components/_careerCard.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/scripts/transitions/contact.js" afterPath="$PROJECT_DIR$/resources/assets/scripts/transitions/contact.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/scripts/views/contact.js" afterPath="$PROJECT_DIR$/resources/assets/scripts/views/contact.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/styles/layouts/_page_career.scss" afterPath="$PROJECT_DIR$/resources/assets/styles/layouts/_page_career.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/styles/layouts/_page_contact.scss" afterPath="$PROJECT_DIR$/resources/assets/styles/layouts/_page_contact.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +26,7 @@
       <file leaf-file-name="page-career.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/page-career.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="391">
               <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding>
                 <marker date="1527402145243" expanded="true" signature="793:1052" ph="..." />
@@ -34,12 +36,76 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/views/about.js">
+      <file leaf-file-name="page-contact.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/page-contact.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="368">
+              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_page_career.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/styles/layouts/_page_career.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_mixIn.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/styles/common/_mixIn.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="471">
+              <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_page_about.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/styles/layouts/_page_about.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_page_contact.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/assets/styles/layouts/_page_contact.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1886">
+              <caret line="82" column="15" lean-forward="false" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/transitions/contact.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/views/contact.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,65 +113,11 @@
       <file leaf-file-name="career.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/scripts/transitions/career.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="48" />
+            <state relative-caret-position="-60">
+              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="career.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/views/career.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/transitions/about.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-613">
-              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showSectionTitle.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/modules/showSectionTitle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_careerCard.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/styles/components/_careerCard.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="51" column="14" lean-forward="false" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="careerCard.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/careerCard.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="32" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -113,18 +125,8 @@
       <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/styles/common/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="careerCard.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/modules/careerCard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="23">
+              <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -144,9 +146,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/assets/scripts/common.js" />
         <option value="$PROJECT_DIR$/app/controllers/app.php" />
-        <option value="$PROJECT_DIR$/resources/assets/scripts/views/contact.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/styles/main.scss" />
@@ -170,7 +170,6 @@
         <option value="$PROJECT_DIR$/app/setup.php" />
         <option value="$PROJECT_DIR$/resources/assets/scripts/modules/slider.js" />
         <option value="$PROJECT_DIR$/resources/assets/scripts/modules/sliderToDetail.js" />
-        <option value="$PROJECT_DIR$/resources/assets/scripts/transitions/contact.js" />
         <option value="$PROJECT_DIR$/resources/assets/styles/layouts/_page_products.scss" />
         <option value="$PROJECT_DIR$/resources/views/page-products.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/scripts/barba/init.js" />
@@ -191,10 +190,13 @@
         <option value="$PROJECT_DIR$/resources/assets/scripts/views/career.js" />
         <option value="$PROJECT_DIR$/resources/assets/scripts/transitions/about.js" />
         <option value="$PROJECT_DIR$/resources/assets/scripts/modules/showSectionTitle.js" />
-        <option value="$PROJECT_DIR$/resources/assets/styles/layouts/_page_career.scss" />
         <option value="$PROJECT_DIR$/resources/assets/scripts/transitions/career.js" />
         <option value="$PROJECT_DIR$/resources/assets/styles/components/_careerCard.scss" />
         <option value="$PROJECT_DIR$/resources/assets/scripts/modules/careerCard.js" />
+        <option value="$PROJECT_DIR$/resources/assets/styles/layouts/_page_career.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/scripts/views/contact.js" />
+        <option value="$PROJECT_DIR$/resources/assets/scripts/transitions/contact.js" />
+        <option value="$PROJECT_DIR$/resources/assets/styles/layouts/_page_contact.scss" />
       </list>
     </option>
   </component>
@@ -385,7 +387,7 @@
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
-    <property name="SearchEverywhereHistoryKey" value="ca&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_careerCard.scss&#10;va&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_variables.scss&#10;page-ca&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/views/page-career.blade.php&#10;page_ca&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/layouts/_page_career.scss&#10;about&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/scripts/transitions/about.js&#10;.info-row&#9;null&#9;null&#10;compa&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_companyInfo.scss&#10;view/news&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/views/partials/news.blade.php&#10;news&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_news.scss&#10;page-abo&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/views/page-about.blade.php&#10;section&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_sectionTitle.scss&#10;vari&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_variables.scss&#10;slider&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/scripts/modules/sliderToDetail.js&#10;glo&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_global.scss&#10;var&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_variables.scss" />
+    <property name="SearchEverywhereHistoryKey" value="va&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_variables.scss&#10;mi&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_mixIn.scss&#10;ca&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_careerCard.scss&#10;page-ca&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/views/page-career.blade.php&#10;page_ca&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/layouts/_page_career.scss&#10;about&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/scripts/transitions/about.js&#10;.info-row&#9;null&#9;null&#10;compa&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_companyInfo.scss&#10;view/news&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/views/partials/news.blade.php&#10;news&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_news.scss&#10;page-abo&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/views/page-about.blade.php&#10;section&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_sectionTitle.scss&#10;vari&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_variables.scss&#10;slider&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/scripts/modules/sliderToDetail.js&#10;glo&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_global.scss&#10;var&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_variables.scss" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="" />
@@ -431,7 +433,7 @@
       <workItem from="1527002624480" duration="1000" />
       <workItem from="1527002631861" duration="88136000" />
       <workItem from="1527289251875" duration="6025000" />
-      <workItem from="1527302790139" duration="53522000" />
+      <workItem from="1527302790139" duration="57188000" />
     </task>
     <task id="LOCAL-00001" summary="create member">
       <created>1527024647961</created>
@@ -538,11 +540,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527404464928</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="finish cardExpandAnimation">
+      <created>1527407842543</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1527407842543</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147693000" />
+    <option name="totallyTimeSpent" value="151359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -610,7 +619,8 @@
     <MESSAGE value="finish products transition" />
     <MESSAGE value="finish about transition" />
     <MESSAGE value="finish career transition" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish career transition" />
+    <MESSAGE value="finish cardExpandAnimation" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish cardExpandAnimation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -619,46 +629,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2531">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1527309967092" expanded="true" signature="470:933" ph="..." />
-            <marker date="1527309967092" expanded="true" signature="492:921" ph="..." />
-            <marker date="1527309967092" expanded="true" signature="512:909" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/filters.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/styles/common/_mixIn.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -675,14 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/transitions/contact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -942,61 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/styles/layouts/_page_about.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/styles/layouts/_page_career.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/page-career.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <marker date="1527402145243" expanded="true" signature="793:1052" ph="..." />
-            <marker date="1527402145243" expanded="true" signature="817:1051" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/views/about.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/transitions/career.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/views/career.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/scripts/transitions/about.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-613">
@@ -1007,10 +918,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/styles/common/_variables.scss">
+    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/modules/careerCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="41" />
+        <state relative-caret-position="207">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/careerCard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1031,18 +950,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/careerCard.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/views/career.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="32" />
+        <state relative-caret-position="276">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/views/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/modules/careerCard.js">
+    <entry file="file://$PROJECT_DIR$/resources/views/page-career.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="391">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <marker date="1527402145243" expanded="true" signature="793:1052" ph="..." />
+            <marker date="1527402145243" expanded="true" signature="817:1051" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/styles/common/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/styles/common/_mixIn.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/styles/layouts/_page_about.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/styles/layouts/_page_career.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/page-contact.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/transitions/career.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/views/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/transitions/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/styles/layouts/_page_contact.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1886">
+          <caret line="82" column="15" lean-forward="false" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
           <folding />
         </state>
       </provider>
