@@ -1,4 +1,3 @@
-// import shortenNewsString from '../modules/shortenNewsString';
 import transition from '../transitions/about';
 
 export default {
@@ -10,10 +9,6 @@ export default {
     // このページのトランジションが完了した時。
     transition.in();
     transition.scroll();
-    // shortenNewsString();
-
-
-
   },
   onLeave: function() {
     // 次のページへのトランジションが始まった時。

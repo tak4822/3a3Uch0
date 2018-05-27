@@ -1,6 +1,5 @@
 .careerCard-container {
   width: 100%;
-  box-shadow: $box-shadow;
   padding: 20px 20px 12px;
   margin-bottom: 30px;
 
@@ -12,25 +11,29 @@
     margin-bottom: 10px;
 
     .deco {
-      height: 100%;
+      height: 0;
       width: 5px;
       background: $brand-primary;
     }
 
     .position {
+      opacity: 0;
       font-size: 1.4rem;
       margin-left: 10px;
     }
   }
 
   .leadDesc {
+    opacity: 0;
     line-height: 1.6rem;
   }
 
   .expandButton {
+    opacity: 0;
     display: flex;
     align-items: center;
     margin-top: 20px;
+    cursor: pointer;
 
     .buttonText {
       @include textBold;
@@ -39,6 +42,7 @@
     .arrow {
       width: 6px;
       margin-left: 10px;
+      transform: rotate(90deg);
     }
   }
 

@@ -1,4 +1,5 @@
 import careerCard from '../modules/careerCard';
+import transition from '../transitions/career';
 
 export default {
   namespace: 'career',
@@ -9,7 +10,7 @@ export default {
   onEnterCompleted: function() {
     // このページのトランジションが完了した時。
     careerCard();
-
+    transition.in();
 
   },
   onLeave: function() {
