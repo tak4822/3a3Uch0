@@ -1,6 +1,7 @@
 import { TweenLite, Power1 } from 'gsap/TweenMax'
 
 export default function() {
+  window.scrollTo(0, 0);
   const kakucho = $('.kakucho-name');
   TweenLite.fromTo(kakucho, 0.8, {
       textShadow: 'rgba(0, 0, 0, 0) 0 1px 2px',
@@ -19,5 +20,5 @@ export default function() {
 
   setTimeout(() => {
     $('.scroll-ui').addClass('animStart');
-  }, 1500)
+  }, 500)
 }

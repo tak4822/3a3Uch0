@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="front-page-container">
-        <div class="front-view-wrapper">
+        <div id="firstView" class="front-view-wrapper">
             <div class="first-view">
                 <div class="first-view-contents">
                     <h1 class="kakucho-name"><span>K</span><span>A</span><span>K</span><span>U</span><span>C</span><span>H</span><span>O</span></h1>
@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-        <div class="front-view-wrapper">
+        <div id="secondView" class="front-view-wrapper">
             <div class="second-view">
                 <div class="philosophy">
                     <p class="philosophy-letter">現実世界を<br/>拡張し、<br/>新しい社会の<br/>実現を目指す</p>
@@ -39,12 +39,14 @@
                 </div>
             </div>
         </div>
-        <svg class="front-view-triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 333.3 397.9">
-            <polygon class="cls-1" points="166.6,75 39.3,295.5 294,295.5">
-                <animate id="animation-to-long-tri" begin="indefinite" dur="1000ms" fill="freeze" attributeName="points" to="258.8,258.8 98.7,30.8 104.2,375.3 "/>
-                {{--<animate id="animation-to-green" begin="indefinite" fill="freeze" attributeName="fill" dur="500ms" to="#53B848"></animate>--}}
-                <animate id="animation-for-cta" begin="indefinite" dur="600ms" fill="freeze" attributeName="points" to="247.4,14.3 42.4,271.5 299.6,386"/>
-            </polygon>
-        </svg>
+        <div class="svg-container">
+            <svg class="front-view-triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 333.3 397.9">
+                <polygon class="cls-1" points="166.6,75 39.3,295.5 294,295.5">
+                    <animate id="animation-to-long-tri" begin="indefinite" dur="1000ms" fill="freeze" attributeName="points" to="258.8,258.8 98.7,30.8 104.2,375.3 "/>
+                    {{--<animate id="animation-to-green" begin="indefinite" fill="freeze" attributeName="fill" dur="500ms" to="#53B848"></animate>--}}
+                    <animate id="animation-for-cta" begin="indefinite" dur="600ms" fill="freeze" attributeName="points" to="247.4,14.3 42.4,271.5 299.6,386"/>
+                </polygon>
+            </svg>
+        </div>
     </section>
 @endsection

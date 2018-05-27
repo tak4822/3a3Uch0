@@ -4,6 +4,10 @@
     <list default="true" id="295aa1f2-bb97-4b7c-b501-8126d8da186f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/scripts/modules/frontPageScroll.js" afterPath="$PROJECT_DIR$/resources/assets/scripts/modules/frontPageScroll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/scripts/transitions/frontPage.js" afterPath="$PROJECT_DIR$/resources/assets/scripts/transitions/frontPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/styles/common/_animation.scss" afterPath="$PROJECT_DIR$/resources/assets/styles/common/_animation.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/styles/common/_global.scss" afterPath="$PROJECT_DIR$/resources/assets/styles/common/_global.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/styles/common/_mixIn.scss" afterPath="$PROJECT_DIR$/resources/assets/styles/common/_mixIn.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/styles/layouts/_page_front.scss" afterPath="$PROJECT_DIR$/resources/assets/styles/layouts/_page_front.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/front-page.blade.php" afterPath="$PROJECT_DIR$/resources/views/front-page.blade.php" />
     </list>
@@ -25,80 +29,90 @@
       <file leaf-file-name="_page_front.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/styles/layouts/_page_front.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="158" column="15" lean-forward="false" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="15" />
+            <state relative-caret-position="115">
+              <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frontPage.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/transitions/frontPage.js">
+      <file leaf-file-name="frontPageScroll.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/modules/frontPageScroll.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="82" column="37" lean-forward="true" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="front-page.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/front-page.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="597">
+              <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_animation.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/styles/common/_animation.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_global.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/styles/common/_global.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/transitions/about.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_mixIn.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/styles/common/_mixIn.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="frontPage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/views/frontPage.js">
+        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/transitions/frontPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frontPageScroll.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/modules/frontPageScroll.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-532">
-              <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+            <state relative-caret-position="69">
+              <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="onEveryPage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/barba/onEveryPage.js">
+      <file leaf-file-name="page-about.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/page-about.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setting.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/barba/setting.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="linkHandler.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/barba/linkHandler.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/scripts/barba/init.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="44" />
+            <state relative-caret-position="138">
+              <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -107,20 +121,8 @@
       <file leaf-file-name="transitions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/scripts/barba/transitions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-64">
-              <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="7" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="107" column="19" lean-forward="false" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
+            <state relative-caret-position="445">
+              <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -143,9 +145,7 @@
         <option value="$PROJECT_DIR$/app/controllers/app.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/styles/main.scss" />
-        <option value="$PROJECT_DIR$/resources/assets/styles/common/_mixIn.scss" />
         <option value="$PROJECT_DIR$/resources/assets/scripts/main.js" />
-        <option value="$PROJECT_DIR$/resources/assets/styles/common/_animation.scss" />
         <option value="$PROJECT_DIR$/resources/assets/scripts/modules/firstTransition.js" />
         <option value="$PROJECT_DIR$/resources/assets/scripts/transitions/header.js" />
         <option value="$PROJECT_DIR$/resources/assets/scripts/util/charCount.js" />
@@ -186,10 +186,12 @@
         <option value="$PROJECT_DIR$/resources/assets/styles/layouts/_page_contact.scss" />
         <option value="$PROJECT_DIR$/resources/assets/scripts/views/frontPage.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/resources/assets/styles/common/_animation.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/styles/common/_mixIn.scss" />
         <option value="$PROJECT_DIR$/resources/assets/styles/common/_global.scss" />
         <option value="$PROJECT_DIR$/resources/views/front-page.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/scripts/transitions/frontPage.js" />
         <option value="$PROJECT_DIR$/resources/assets/styles/layouts/_page_front.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/scripts/transitions/frontPage.js" />
         <option value="$PROJECT_DIR$/resources/assets/scripts/modules/frontPageScroll.js" />
       </list>
     </option>
@@ -373,7 +375,7 @@
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
-    <property name="SearchEverywhereHistoryKey" value="va&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_variables.scss&#10;mi&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_mixIn.scss&#10;ca&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_careerCard.scss&#10;page-ca&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/views/page-career.blade.php&#10;page_ca&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/layouts/_page_career.scss&#10;about&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/scripts/transitions/about.js&#10;.info-row&#9;null&#9;null&#10;compa&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_companyInfo.scss&#10;view/news&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/views/partials/news.blade.php&#10;news&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_news.scss&#10;page-abo&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/views/page-about.blade.php&#10;section&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_sectionTitle.scss&#10;vari&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_variables.scss&#10;slider&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/scripts/modules/sliderToDetail.js&#10;glo&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_global.scss&#10;var&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_variables.scss" />
+    <property name="SearchEverywhereHistoryKey" value="glo&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_global.scss&#10;scroll-ui&#9;null&#9;null&#10;va&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_variables.scss&#10;mi&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_mixIn.scss&#10;ca&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_careerCard.scss&#10;page-ca&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/views/page-career.blade.php&#10;page_ca&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/layouts/_page_career.scss&#10;about&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/scripts/transitions/about.js&#10;.info-row&#9;null&#9;null&#10;compa&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_companyInfo.scss&#10;view/news&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/views/partials/news.blade.php&#10;news&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_news.scss&#10;page-abo&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/views/page-about.blade.php&#10;section&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/components/_sectionTitle.scss&#10;vari&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_variables.scss&#10;slider&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/scripts/modules/sliderToDetail.js&#10;var&#9;FILE&#9;file:///Applications/MAMP/htdocs/kakucho/wp-content/themes/real/resources/assets/styles/common/_variables.scss" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="" />
@@ -419,7 +421,7 @@
       <workItem from="1527002624480" duration="1000" />
       <workItem from="1527002631861" duration="88136000" />
       <workItem from="1527289251875" duration="6025000" />
-      <workItem from="1527302790139" duration="66165000" />
+      <workItem from="1527302790139" duration="71823000" />
     </task>
     <task id="LOCAL-00001" summary="create member">
       <created>1527024647961</created>
@@ -547,11 +549,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527441739400</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="create transition when user hit the button">
+      <created>1527448961135</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1527448961135</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160336000" />
+    <option name="totallyTimeSpent" value="165994000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -622,7 +631,8 @@
     <MESSAGE value="finish cardExpandAnimation" />
     <MESSAGE value="finish contact transition" />
     <MESSAGE value="make frontpage transition responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="make frontpage transition responsive" />
+    <MESSAGE value="create transition when user hit the button" />
+    <option name="LAST_COMMIT_MESSAGE" value="create transition when user hit the button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -643,14 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="18" column="84" lean-forward="true" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/styles/common/_animation.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -700,16 +702,6 @@
         <state relative-caret-position="92">
           <caret line="4" column="60" lean-forward="false" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/page-about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="e#35#67#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -806,16 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/transitions/about.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-613">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/scripts/modules/careerCard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -878,14 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/styles/common/_mixIn.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -955,22 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/styles/common/_global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="71" column="12" lean-forward="false" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/front-page.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/scripts/modules/slider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1761">
@@ -984,16 +942,8 @@
         <state relative-caret-position="253">
           <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/styles/layouts/_page_front.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="158" column="15" lean-forward="false" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,28 +963,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/barba/onEveryPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/barba/transitions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-64">
-          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/scripts/barba/init.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/barba/onEveryPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1047,19 +987,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/modules/frontPageScroll.js">
+    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/transitions/about.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-532">
-          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+        <state relative-caret-position="690">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/styles/common/_mixIn.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/styles/common/_global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/styles/common/_animation.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/styles/layouts/_page_front.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/front-page.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/page-about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/barba/transitions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/scripts/transitions/frontPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state relative-caret-position="69">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/scripts/modules/frontPageScroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="82" column="37" lean-forward="true" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

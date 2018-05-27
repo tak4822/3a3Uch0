@@ -1,45 +1,16 @@
-import { TweenLite, Power1, Expo, Back } from 'gsap/TweenMax';
+import { TweenLite, Power1, Expo, ExpoScaleEase } from 'gsap/TweenMax';
 import Barba from 'barba.js/dist/barba.min';
 
 export default function() {
-  // const windowHeight =  $(window).height();
   let isScrolled = false;
 
-  document.getElementsByTagName("BODY")[0].addEventListener('click', function() {
-    transionToSecondView();
-  })
-
-  window.onscroll = function() {
+  $(window).scroll(function() {
     if (!isScrolled) {
-      console.log('scrolled');
       transionToSecondView();
+      isScrolled = true;
     }
-    isScrolled = true;
-  };
+  });
 }
-
-const triangle = $('.front-view-triangle');
-const kakucho = document.querySelector('.kakucho-name');
-const firstViewText = $('.text-anim-wrapper.first').find('.white-block');
-const firstView = $('.first-view');
-
-const showText = () => {
-  const philosophyText = $('.philosophy-text-container');
-  TweenLite.fromTo(philosophyText, 0.8,
-    {
-      autoAlpha: 0,
-      filter: 'blur(5px)',
-      y: 20,
-    },
-    {
-      autoAlpha: 1,
-      filter: 'blur(0px)',
-      y: 0,
-      ease: Expo.easeIn,
-      onComplete: showButton,
-    });
-};
-
 
 const showButton = () => {
   // show Button
@@ -111,7 +82,12 @@ const atachEventToButton = () => {
         TweenLite.to(svg, 0.4, {
           transformOrigin: '50% 50%',
           scale: 60,
-          ease: Back.easeInOut,
+          ease: ExpoScaleEase.config(9, 60), // TODO: make it smoother
+          onStart: function() {
+            // make svg container height bigger so when its expanded, it's not overflow hidden;
+            const svgContainer = document.querySelector('.svg-container');
+            svgContainer.style.height = '120%';
+          },
           onComplete: function() {
             setTimeout(() => {
               Barba.Pjax.goTo('/products');
@@ -122,6 +98,23 @@ const atachEventToButton = () => {
     });
   });
 }
+
+const showText = () => {
+  const philosophyText = $('.philosophy-text-container');
+  TweenLite.fromTo(philosophyText, 0.8,
+    {
+      autoAlpha: 0,
+      filter: 'blur(5px)',
+      y: 20,
+    },
+    {
+      autoAlpha: 1,
+      filter: 'blur(0px)',
+      y: 0,
+      ease: Expo.easeIn,
+      onStart: showButton,
+    });
+};
 
 const showPhilosophy = () => {
   const philosophyLetter = $('.philosophy-letter');
@@ -141,8 +134,11 @@ const showPhilosophy = () => {
 };
 
 const triangleAnimationTween = (el) => {
-  let scaleAmount = 8;
 
+  let scaleAmount = 9;
+  if (window.matchMedia('(max-width:1300px)').matches) {
+    scaleAmount = 8;
+  }
   if (window.matchMedia('(max-width:900px)').matches) {
     scaleAmount = 7;
   }
@@ -150,8 +146,8 @@ const triangleAnimationTween = (el) => {
     scaleAmount = 6;
   }
 
-  let XAmount = -400;
-  if (window.matchMedia('(max-width:1024px)').matches) {
+  let XAmount = -500;
+  if (window.matchMedia('(max-width:1300px)').matches) {
     XAmount = -320;
   }
   if (window.matchMedia('(max-width:900px)').matches) {
@@ -161,7 +157,7 @@ const triangleAnimationTween = (el) => {
     XAmount = -100;
   }
 
-  let YAmount = 70;
+  let YAmount = 120;
   if (window.matchMedia('(max-width:1024px)').matches) {
     YAmount = -160;
   }
@@ -173,7 +169,6 @@ const triangleAnimationTween = (el) => {
   }
 
   TweenLite.to(el, 0.8, {
-    delay: 0.2,
     rotationZ: '-=200_cw',
     scale: scaleAmount,
     x: XAmount,
@@ -188,7 +183,8 @@ const triangleAnimationTween = (el) => {
 }
 
 const triangleAnimation = () => {
-  TweenLite.to(triangle, 1.5, {
+  const triangle = $('.front-view-triangle');
+  TweenLite.to(triangle, 1, {
     filter: 'drop-shadow(rgba(0, 0, 0, 0.16) 0 1px 2px)', // show triangle
     ease: Power1.easeInOut,
     onComplete: function() {
@@ -197,7 +193,16 @@ const triangleAnimation = () => {
   });
 };
 
+const bornSecondView = () => {
+  // const firstView = document.getElementById('firstView');
+  // firstView.style.display = 'none';
+  const secondView = document.getElementById('secondView');
+  secondView.style.display = 'block';
+}
+
 const shadowOutKakucho = () => {
+  const kakucho = document.querySelector('.kakucho-name');
+  const firstView = $('.first-view');
   TweenLite.fromTo(kakucho, 0.6,
     {
       textShadow: 'rgba(0, 0, 0, 0.2) 0 1px 2px',
@@ -210,20 +215,25 @@ const shadowOutKakucho = () => {
         TweenLite.to(firstView, 0.3, {
           autoAlpha: 0,
           ease: Power1.easeIn,
-          onComplete: triangleAnimation,
+          onComplete: function() {
+            window.scrollTo(0, 0); // back pagePos to top
+            bornSecondView();
+            triangleAnimation();
+          },
         });
       },
     });
 }
 
 const transionToSecondView = () => {
+  const firstViewText = $('.text-anim-wrapper.first').find('.white-block');
   TweenLite.fromTo(firstViewText, 0.6, {
       y: '-100%',
     },
     {
       y : '0%',
       ease: Power1.easeIn,
-      onComplete: shadowOutKakucho,
+      onStart: shadowOutKakucho,
     });
   $('.scroll-ui').fadeOut();
 };

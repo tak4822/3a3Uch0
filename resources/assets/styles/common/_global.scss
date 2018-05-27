@@ -22,6 +22,11 @@ h1,
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -65,17 +70,6 @@ button {
     margin-top: 5px;
     font-size: 1.3rem;
     font-weight: 400;
-  }
-}
-
-.main {
-  overflow-x: hidden;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-bottom: 50px;
-  @media screen and (min-width: $tablet) {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
