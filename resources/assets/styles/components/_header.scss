@@ -68,17 +68,31 @@
         position: absolute;
         top: 50%;
         left: 100%;
+        transition: all 0.6s ease-in;
+      }
+
+      &:hover {
+        .nav-title {
+          color: $brand-primary;
+          text-shadow: none;
+        }
+
+        .hover-el {
+          left: 90%;
+        }
       }
     }
 
     .current-menu-item {
-      .nav-title {
-        color: $brand-primary;
-        text-shadow: none;
-      }
+      a {
+        .nav-title {
+          color: $brand-primary;
+          text-shadow: none;
+        }
 
-      .hover-el {
-        left: 90%;
+        .hover-el {
+          left: 90%;
+        }
       }
     }
   }

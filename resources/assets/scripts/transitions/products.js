@@ -8,7 +8,7 @@ export default {
     setTimeout(() => {
       this.showControlButtons();
       this.showSliderTitle();
-    }, 2000)
+    }, 1300)
   },
   desktopIn() {
     this.shadowPagenation();
@@ -17,7 +17,7 @@ export default {
     setTimeout(() => {
       this.showControlButtonsDesktop();
       this.showSliderTitle();
-    }, 2000)
+    }, 1300)
   },
   shadowPagenation() {
     // pagenations
@@ -26,7 +26,7 @@ export default {
 
     pagenationButtons.forEach((button, i) => {
       TweenLite.to(button, 1, {
-        delay: i / 3,
+        delay: i / 4,
         boxShadow: 'rgba(0, 0, 0, 0.1) 0 3px 12px',
         ease: Power2.easeIn,
       })
@@ -34,13 +34,15 @@ export default {
     // .active
     setTimeout(() => {
       pagenationButtons[0].className = 'active';
-    }, 3000);
+    }, 2000);
   },
   shadowSliderBox() {
     // slider container
     // box-shadow: 0 3px 8px 4px rgba(0, 0, 0, 0.1);
     const slider = document.getElementById('slider');
-    TweenLite.to(slider, 1.4, {
+    TweenLite.fromTo(slider, 1.2, {
+      boxShadow: 'rgba(0, 0, 0, 0) 0 3px 8px',
+    },{
       boxShadow: 'rgba(0, 0, 0, 0.1) 0 3px 8px',
       ease: Expo.easeOut,
     })
@@ -53,7 +55,7 @@ export default {
         autoAlpha: 0,
       },
       {
-        delay: 2.5,
+        delay: 1.5,
         autoAlpha: 1,
         ease: Expo.easeIn,
       });
