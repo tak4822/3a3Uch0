@@ -196,6 +196,8 @@ canvas {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  cursor: none;
+  transition: all 0.7s ease;
 }
 
 #pagination {
@@ -237,6 +239,7 @@ canvas {
     background: white;
     margin-right: 25px;
     transition: all 0.6s ease-out;
+    cursor: pointer;
     @media screen and (min-width: $tablet) {
       width: 17px;
       height: 18px;
@@ -275,6 +278,22 @@ canvas {
     transform: rotate(0);
   }
 
+  .control-buttons-text {
+    color: $brand-primary;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-out;
+
+    @media screen and (min-width: $tablet-bg) {
+      font-size: 1.4rem;
+    }
+    @media screen and (min-width: $tablet-bg) {
+      font-size: 1.8rem;
+    }
+    @media screen and (min-width: $desktop-sm) {
+      font-size: 1.2rem;
+    }
+  }
+
   &#pre {
     top: 12%;
     @media screen and (min-width: $tablet-bg) {
@@ -283,6 +302,12 @@ canvas {
     @media screen and (min-width: $desktop-sm) {
       top: 48%;
       left: calc(50% - 480px);
+
+      &:hover {
+        .control-buttons-text {
+          transform: translateX(-10px);
+        }
+      }
     }
     @media screen and (min-width: $desktop-md) {
       left: calc(50% - 680px);
@@ -299,24 +324,15 @@ canvas {
       bottom: auto;
       left: auto;
       right: calc(50% - 480px);
+
+      &:hover {
+        .control-buttons-text {
+          transform: translateX(10px);
+        }
+      }
     }
     @media screen and (min-width: $desktop-md) {
       right: calc(50% - 680px);
-    }
-  }
-
-  .control-buttons-text {
-    color: $brand-primary;
-    font-size: 1.2rem;
-
-    @media screen and (min-width: $tablet-bg) {
-      font-size: 1.4rem;
-    }
-    @media screen and (min-width: $tablet-bg) {
-      font-size: 1.8rem;
-    }
-    @media screen and (min-width: $desktop-sm) {
-      font-size: 1.2rem;
     }
   }
 }

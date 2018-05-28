@@ -20,6 +20,19 @@ export default function(data) {
     e.stopPropagation();
   });
 
+  $("canvas").mousemove(function(e){
+    const mouse = $(".mouse-container");
+    // Add the mouse position to new cursor and followers
+    mouse.css({
+      left: e.pageX,
+      top: e.pageY,
+      opacity: 1, // show the cursor only when move mouse
+    });
+  });
+
+  $("canvas").mouseout(function () {
+    $(".mouse-container").css('opacity', 0);
+  })
 
   slider.addEventListener('click', function() {
     const currentPagenationEL = document.getElementById('pagination').querySelectorAll('.active')[0];

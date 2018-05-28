@@ -1,0 +1,57 @@
+.mouse-container {
+  opacity: 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-25px, -25px);
+}
+
+.cursor-out {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: solid 2px $brand-primary;
+  transform-origin: center;
+}
+//
+//.cursor-core {
+//  width: 10px;
+//  height: 10px;
+//  background-color: $brand-primary;
+//  border-radius: 50%;
+//  transform: translate(10px, 10px);
+//}
+
+.hover {
+  animation: cursor-hover 2s linear infinite;
+}
+
+@keyframes cursor-hover {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  69% {
+    transform: scale(2);
+    opacity: 0;
+  }
+
+  70% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  71% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

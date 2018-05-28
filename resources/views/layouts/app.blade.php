@@ -6,6 +6,12 @@
   <div id="site-wrap" style="opacity: 0;">
     @php do_action('get_header') @endphp
     @include('partials.header')
+
+    <div class="mouse-container">
+      <div class="cursor-out hover"></div>
+      {{--<div class="cursor-core"></div>--}}
+    </div>
+
     <div id="barba-wrapper" class="wrap container" role="document">
       <div class="barba-container" data-namespace="{{ $current_template }}">
         <div class="content">
