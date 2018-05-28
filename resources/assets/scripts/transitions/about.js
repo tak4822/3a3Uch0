@@ -4,68 +4,37 @@ import showSectionTitles from '../modules/showSectionTitle';
 export default {
   in() {
     // show svg without image
-    const memberPic = document.querySelectorAll('.member-pic');
-    const memberPicImage = document.querySelectorAll('.clipped-img img');
-    TweenLite.fromTo(memberPic, 1, {
-        filter: 'drop-shadow(rgba(0, 0, 0, 0) 1px 1px 5px)',
-      },
-      {
-        filter: 'drop-shadow(rgba(0, 0, 0, 0.2) 1px 1px 5px)',
-        onComplete: function() {
-          // show image inside svg
-          TweenLite.fromTo(memberPicImage, 0.6,
-            {
-              filter: 'blur(10px)',
-              alpha: 0,
-              y: -600,
-              rotation: -90,
-            },
-            {
-              filter: 'blur(0)',
-              alpha: 1,
-              y: 0,
-              transformOrigin: '0% 100%',
-              rotation: 0,
-              ease: Expo.easeOut,
-            });
-        },
-      });
-    // show text
-    const memberText = document.querySelectorAll('.member-contents');
-    TweenLite.fromTo(memberText, 1,
-      {
-        filter: 'blur(5px)',
-        alpha: 0,
-        x: -30,
-      },
-      {
-        delay: 1.2,
-        filter: 'blur(0)',
-        alpha: 1,
-        x: 0,
-        ease: Expo.easeOut,
-      });
+    const members = document.querySelectorAll('.member-wrapper');
+    if (window.matchMedia('(min-width: 1250px)').matches) {
+      members.forEach( (member, index) => showMember(member, index) );
+    } else {
+      showMember(members[0], 0);
+      showMember(members[1], 1);
+    }
   },
   scroll() {
     // sections Title
     const sectionTitles = document.querySelectorAll('.sectionTitle-container');
     const memberTitle = sectionTitles[0];
     showSectionTitles(memberTitle);
-    if (window.matchMedia('(min-width: 700px)').matches) {
-      const newsTitle = sectionTitles[1];
-      showSectionTitles(newsTitle);
-    }
 
     const newsPos = document.querySelector('.news-container').offsetTop;
-    const companyPos = document.querySelector('.companyInfo-container')
-      .offsetTop;
+    const companyPos = document.querySelector('.companyInfo-container').offsetTop;
     const windowHeight = document.documentElement.clientHeight;
+    const members = document.querySelectorAll('.member-wrapper');
 
     let newHasBeenOpened = false;
     let companyInfoHasBeenOpened = false;
 
     $(window).scroll(function() {
       const scrollPos = $(window).scrollTop();
+
+      members.forEach(el => {
+        if(el.offsetTop < scrollPos + windowHeight + 100 ) {
+          console.log('in view');
+          showMember(el, 0);
+        }
+      })
 
       if (scrollPos + windowHeight > newsPos && !newHasBeenOpened) {
         newHasBeenOpened = true;
@@ -74,7 +43,7 @@ export default {
         news();
       }
 
-      if (scrollPos + windowHeight > companyPos && !companyInfoHasBeenOpened) {
+      if (scrollPos + windowHeight > companyPos + 50  && !companyInfoHasBeenOpened) {
         companyInfoHasBeenOpened = true;
         const companyInfoTitle = sectionTitles[2];
         showSectionTitles(companyInfoTitle);
@@ -112,6 +81,71 @@ const news = () => {
               ease: Expo.easeOut,
             });
         });
+      },
+    });
+};
+const showedMember = [];
+const showMember = (el, index) => {
+  if(showedMember.includes(el)) return false;
+  showedMember.push(el);
+  const memberPic = el.querySelectorAll('.member-pic');
+  const memberPicImage = el.querySelectorAll('.clipped-img img');
+  const memberPosition = el.querySelectorAll('.member-position');
+  const memberName = el.querySelectorAll('.member-name');
+
+  TweenLite.fromTo(memberPic, 1.4, {
+      filter: 'drop-shadow(rgba(0, 0, 0, 0) 1px 1px 5px)',
+    },
+    {
+      delay: index / 5,
+      filter: 'drop-shadow(rgba(0, 0, 0, 0.2) 1px 1px 5px)',
+      ease: Expo.easeIn,
+      onComplete: function() {
+        // show image inside svg
+        TweenLite.fromTo(memberPicImage, 1.2,
+          {
+            filter: 'blur(20px)',
+            alpha: 0,
+            y: -600,
+            rotation: -90,
+          },
+          {
+            filter: 'blur(0)',
+            alpha: 1,
+            y: 0,
+            transformOrigin: '0% 100%',
+            rotation: 0,
+            ease: Expo.easeOut,
+          });
+      },
+      onStart: function() {
+        // show text
+        TweenLite.fromTo(memberPosition, 1,
+        {
+          filter: 'blur(5px)',
+          alpha: 0,
+          x: -20,
+        },
+        {
+          delay: 1.8,
+          filter: 'blur(0)',
+          alpha: 1,
+          x: 0,
+          ease: Expo.easeOut,
+        });
+        TweenLite.fromTo(memberName, 1,
+          {
+            filter: 'blur(5px)',
+            alpha: 0,
+            x: -20,
+          },
+          {
+            delay: 2,
+            filter: 'blur(0)',
+            alpha: 1,
+            x: 0,
+            ease: Expo.easeOut,
+          });
       },
     });
 };

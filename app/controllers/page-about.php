@@ -12,7 +12,7 @@ class PageAbout extends Controller
             'post_status' => 'publish',
             'post_type' => 'member',
             'orderby' => 'date',
-            'order' => 'DESC'
+            'order' => 'ASC'
         );
         return new WP_Query( $args );
     }
@@ -21,7 +21,8 @@ class PageAbout extends Controller
         $args = array(
             'post_status' => 'publish',
             'post_type' => 'news',
-
+            'orderby' => 'date',
+            'order' => 'DESC'
         );
         $query = new WP_Query($args);
         return $query;

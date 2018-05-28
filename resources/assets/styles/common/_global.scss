@@ -13,7 +13,9 @@ h1,
 .form-label,
 .wpcf7-submit,
 .slider-container .product-name,
-.control-buttons-text {
+.control-buttons-text,
+.member-name,
+.member-position {
   font-family: 'Optima', 'Helvetica Neue', 'Segoe UI', sans-serif;
   font-weight: 400;
 }
@@ -74,6 +76,9 @@ button {
 }
 
 .regular-container {
+  padding-top: 100px;
+  width: 90%;
+  margin: auto;
   @media screen and (min-width: $tablet-bg) {
     width: 90%;
     margin: auto;

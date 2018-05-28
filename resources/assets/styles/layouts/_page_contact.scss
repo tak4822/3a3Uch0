@@ -13,9 +13,12 @@
   }
 
   .contents-left {
-    opacity: 0;
     @media screen and (min-width: $desktop-sm) {
       flex: 1;
+    }
+
+    .page-contents {
+      opacity: 0;
     }
   }
 

@@ -7,7 +7,7 @@ export default {
     showSectionTitle(sectionTitle);
 
     const title = document.querySelector('.section-title');
-    const contents = document.querySelector('.contents-left');
+    const contents = document.querySelector('.page-contents');
 
     TweenLite.fromTo(title, 1,
       {
@@ -36,7 +36,7 @@ export default {
         ease: Expo.easeIn,
       });
 
-    setTimeout(showForm, 1000);
+    setTimeout(showForm, 1200);
     setTimeout(selectMotion, 2800);
 
   },

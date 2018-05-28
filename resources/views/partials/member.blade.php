@@ -1,21 +1,19 @@
-<article class="member-container">
+<article class="member-wrapper">
     <div class="member-pic">
         <div class="clipped-img" >
+            {{--<div class="linear-gradient"></div>--}}
             <img src="{{ $image }}" alt="">
         </div>
         <svg height="0" width="0" viewBox="0 0 500 500">
             <defs>
                 <clipPath id="member-clip" clipPathUnits="objectBoundingBox">
-                    <polygon points="0.7 0.12, 0.83 0.63, 0.51 1, 0.16 0.72, 0.32 0.39, 0.33 0" />
+                    <polygon points="0.8 0.13, 0.99 0.56, 0.55 1, 0.02 0.7, 0.21 0.34, 0.15 0" />
                 </clipPath>
             </defs>
         </svg>
     </div>
     <div class="member-contents">
-        <div class="header">
-            <p class="position">{{ $position }}</p>
-            <p class="name">{{ $name }}</p>
-        </div>
-        <p class="introduction">{{ $introduction }}</p>
+        <p class="member-position">{{ $position }}</p>
+        <p class="member-name">{{ $name }}</p>
     </div>
 </article>
