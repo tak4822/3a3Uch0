@@ -38,8 +38,6 @@ export default function(data) {
     const currentPagenationEL = document.getElementById('pagination').querySelectorAll('.active')[0];
     const currentId = parseInt(currentPagenationEL.dataset.slide, 10);
     const currentData = data[currentId];
-    console.log(currentData);
-
     // container zIndex up
     document.querySelector('.regular-container.products').style.zIndex = 200;
     // create overlay and animate

@@ -4,7 +4,6 @@ import transition from '../transitions/career';
 export default {
   namespace: 'career',
   onEnter: function() {
-    console.log('career');
     // このページのcontainerが読み込みを開始した時。
   },
   onEnterCompleted: function() {

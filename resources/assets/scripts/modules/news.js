@@ -1,6 +1,5 @@
 export default function() {
   $(".news-wrapper .leadText").mousemove(function(e){
-    console.log('heu');
     const mouse = $(".mouse-container");
     // Add the mouse position to new cursor and followers
     mouse.css({

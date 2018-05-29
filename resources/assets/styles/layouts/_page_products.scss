@@ -178,9 +178,13 @@
           height: 50px;
         }
 
-        img {
+        a {
           height: 100%;
           margin-right: 20px;
+
+          img {
+            height: 100%;
+          }
         }
       }
     }

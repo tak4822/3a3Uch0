@@ -80,8 +80,6 @@ export const displacementSlider = function(opts) {
   var disp = loader.load(dispImage);
   disp.wrapS = disp.wrapT = THREE.RepeatWrapping;
 
-  console.log('images',images);
-
   images.forEach( ( img ) => {
 
     image = loader.load( img.getAttribute( 'src' ) + '?v=' + Date.now() );
@@ -199,7 +197,6 @@ export const displacementSlider = function(opts) {
     controlButtons.forEach( (el) => {
 
       el.addEventListener('click', function () {
-        console.log('click', this.id);
         if (!isAnimating) {
           isAnimating = true;
           const currentPagenationEL = document.getElementById('pagination').querySelectorAll('.active')[0];

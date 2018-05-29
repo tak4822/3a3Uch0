@@ -42,7 +42,6 @@ export default {
 
 const showCard = () => {
   const cards = document.querySelectorAll('.careerCard-container');
-  console.log(cards);
   cards.forEach((card, index) => {
     TweenLite.fromTo(card, 0.8, {
       boxShadow: 'rgba(0, 0, 0, 0) 0 1px 3px',

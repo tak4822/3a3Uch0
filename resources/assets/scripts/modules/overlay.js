@@ -25,14 +25,12 @@ export default class ShapeOverlays {
     }
   }
   open() {
-    console.log('open');
     this.isOpened = true;
     this.elm.classList.add('is-opened');
     this.timeStart = Date.now();
     this.renderLoop();
   }
   close() {
-    console.log('close');
     this.isOpened = false;
     this.elm.classList.remove('is-opened');
     this.timeStart = Date.now();
