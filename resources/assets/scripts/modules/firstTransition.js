@@ -6,12 +6,12 @@ export default function() {
   const w = $(window).width();
 
   const img = $("<img />")
-  .attr('src', require('../../images/ajax-loader.gif'))
+  .attr('src', require('../../images/loadingAnimation.gif'))
   .css({
-    'width': '10px',
+    'width': '80px',
     'position': 'fixed',
-    'top': h / 2 - 5 + 'px',
-    'left': w / 2 - 5 + 'px',
+    'top': h / 2 - 40 + 'px',
+    'left': w / 2 - 40 + 'px',
   });
 
   $('.transition-overlay')

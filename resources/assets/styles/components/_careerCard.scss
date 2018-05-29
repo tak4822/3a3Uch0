@@ -44,6 +44,7 @@
       width: 6px;
       margin-left: 10px;
       transform: rotate(90deg);
+      transition: all 0.3s ease;
     }
   }
 
@@ -67,6 +68,12 @@
         color: white;
         @include textBold;
       }
+    }
+  }
+
+  &:hover {
+    .arrow {
+      transform: rotate(90deg) translateX(5px);
     }
   }
 }

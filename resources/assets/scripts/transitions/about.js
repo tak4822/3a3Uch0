@@ -5,7 +5,7 @@ export default {
   in() {
     // show svg without image
     const members = document.querySelectorAll('.member-wrapper');
-    if (window.matchMedia('(min-width: 1250px)').matches) {
+    if (window.matchMedia('(min-width: 550px)').matches) {
       members.forEach( (member, index) => showMember(member, index) );
     } else {
       showMember(members[0], 0);
@@ -31,7 +31,6 @@ export default {
 
       members.forEach(el => {
         if(el.offsetTop < scrollPos + windowHeight + 100 ) {
-          console.log('in view');
           showMember(el, 0);
         }
       })

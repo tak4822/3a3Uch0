@@ -6,11 +6,11 @@ export default function() {
     TweenLite.fromTo($(this), 0.3, {
       alpha: 1,
       filter: 'blur(0px)',
-      x: 0,
+      y: 0,
     },{
       alpha: 0,
       filter: 'blur(5px)',
-      x: 10,
+      y: 10,
       ease: Power1.easeIn,
       onComplete: function() {
         contents.show(500).css({'margin': '20px auto'});

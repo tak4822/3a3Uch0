@@ -33,6 +33,7 @@ class App extends Controller
         if (is_page('products')) return 'products';
         if (is_page('career')) return 'career';
         if (is_page('contact')) return 'contact';
+        if (is_single()) return 'news';
         if (is_404()) return '404';
 
         return 'else';

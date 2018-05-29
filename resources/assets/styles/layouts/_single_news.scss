@@ -1,0 +1,16 @@
+.contents-wrapper.news {
+  margin-top: 30px;
+  margin-bottom: 40px;
+
+  p.section-title {
+    @include textBold;
+    font-size: 22px;
+  }
+
+  .leadText {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #ccc;
+  }
+}

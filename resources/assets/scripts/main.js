@@ -9,6 +9,7 @@ import products from './views/products';
 import about from './views/about';
 import career from './views/career';
 import contact from './views/contact';
+import news from './views/news';
 
 import common from './common';
 
@@ -18,6 +19,7 @@ const views = [
   about,
   career,
   contact,
+  news,
 ];
 
 // Load Events

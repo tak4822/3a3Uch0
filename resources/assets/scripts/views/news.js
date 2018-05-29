@@ -1,19 +1,16 @@
-import transition from '../transitions/about';
-import newsHover from '../modules/news';
+// import transition from '../transitions/news';
+// import newsHover from '../modules/news';
 
 export default {
-  namespace: 'about',
+  namespace: 'news',
   onEnter: function() {
     // このページのcontainerが読み込みを開始した時。
   },
   onEnterCompleted: function() {
     // このページのトランジションが完了した時。
-    transition.scroll();
-    setTimeout(() => {
-      transition.in();
-    }, 300)
 
-    newsHover();
+
+    // newsHover();
   },
   onLeave: function() {
     // 次のページへのトランジションが始まった時。

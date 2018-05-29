@@ -27,6 +27,7 @@
             <div class="news-box">
                 @php($i = 0) @while($get_news->have_posts() && $i < 5) @php($get_news->the_post())
                 @component('partials.news', [
+                    'link' => get_permalink(),
                     'title' => get_the_title(),
                     'date' => get_the_date( 'Y. m. d', get_the_ID() ),
                     'leadText' => $leadText = get_field('leadText'),
