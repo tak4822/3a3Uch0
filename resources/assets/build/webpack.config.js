@@ -55,6 +55,7 @@ let webpackConfig = {
         use: [
           { loader: 'cache' },
           { loader: 'buble', options: { objectAssign: 'Object.assign' } },
+          // { loader: 'babel-loader' },
         ],
       },
       {

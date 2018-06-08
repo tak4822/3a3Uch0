@@ -15,7 +15,7 @@
       transition: all 0.8s ease;
       width: 100px;
       position: absolute;
-      top: calc(50% - 100px);
+      top: calc(50% - 70px);
       left: calc(50% - 50px);
       z-index: -2;
 
@@ -29,7 +29,7 @@
 .front-view-wrapper {
   z-index: 20;
   width: 100%;
-  height: calc(100vh + 10px);
+  height: calc(100vh + 20px);
   position: absolute;
 
   &#secondView {
@@ -47,6 +47,8 @@
   margin-bottom: 1px;
 
   .first-view-contents {
+    margin-top: -20px;
+
     .kakucho-name {
       color: white;
       text-align: center;

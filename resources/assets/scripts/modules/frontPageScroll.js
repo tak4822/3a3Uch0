@@ -41,6 +41,9 @@ const atachEventToButton = () => {
   const svg = document.querySelector('.front-view-triangle');
 
   let hasBeenEntered = false;
+  // if(window.matchMedia('(max-width:1025px)').matches) { // only desktop for hover
+  //   hasBeenEntered = true;
+  // }
   ctaButton.addEventListener("mouseenter", function() {
     if(!hasBeenEntered) {
       hasBeenEntered = true;
@@ -63,7 +66,7 @@ const atachEventToButton = () => {
 
     // delete text
     const philosophyLetter = $('.philosophy-letter');
-    TweenLite.to( philosophyLetter, 0.6, {
+    TweenLite.to( philosophyLetter, 0.8, {
       autoAlpha: 0,
       filter: 'blur(15px)',
       x: 50,
@@ -71,27 +74,30 @@ const atachEventToButton = () => {
     });
 
     const philosophyText = $('.philosophy-text-container');
-    TweenLite.to(philosophyText, 0.6, {
+    TweenLite.to(philosophyText, 0.8, {
       delay: 0.2,
-      autoAlpha: 0,
+      opacity: 0,
       filter: 'blur(5px)',
       y: -20,
       ease: Expo.easeIn,
-      onComplete: function() {
+      onStart: function() {
         // scale up svg
-        TweenLite.to(svg, 0.4, {
+        TweenLite.to(svg, 0.8, {
+          delay: 0.7,
           transformOrigin: '50% 50%',
-          scale: 60,
+          scale: 50,
           ease: ExpoScaleEase.config(9, 60), // TODO: make it smoother
           onStart: function() {
             // make svg container height bigger so when its expanded, it's not overflow hidden;
-            const svgContainer = document.querySelector('.svg-container');
-            svgContainer.style.height = '120%';
+            setTimeout(() => {
+              const svgContainer = document.querySelector('.svg-container');
+              svgContainer.style.overflow = 'visible';
+            }, 700)
           },
           onComplete: function() {
             setTimeout(() => {
               Barba.Pjax.goTo('/products');
-            }, 500)
+            }, 1000)
           },
         })
       },
@@ -169,6 +175,7 @@ const triangleAnimationTween = (el) => {
   }
 
   TweenLite.to(el, 0.8, {
+    delay: 0.8,
     rotationZ: '-=200_cw',
     scale: scaleAmount,
     x: XAmount,
@@ -183,10 +190,12 @@ const triangleAnimationTween = (el) => {
 }
 
 const triangleAnimation = () => {
-  const triangle = $('.front-view-triangle');
-  TweenLite.to(triangle, 1, {
+  const triangle = document.querySelector('.front-view-triangle');
+  TweenLite.fromTo(triangle, 0.6, {
+    filter: 'drop-shadow(rgba(0, 0, 0, 0) 0 1px 2px)',
+  },{
     filter: 'drop-shadow(rgba(0, 0, 0, 0.16) 0 1px 2px)', // show triangle
-    ease: Power1.easeInOut,
+    ease: Power1.easeIn,
     onComplete: function() {
       triangleAnimationTween(triangle);
     },

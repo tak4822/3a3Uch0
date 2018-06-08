@@ -9,9 +9,7 @@ export default {
   onEnterCompleted: function() {
     // このページのトランジションが完了した時。
     transition.scroll();
-    setTimeout(() => {
-      transition.in();
-    }, 300)
+    transition.in();
 
     newsHover();
   },

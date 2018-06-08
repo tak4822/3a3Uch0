@@ -2,7 +2,7 @@
     <div class="member-pic">
         <div class="clipped-img" >
             {{--<div class="linear-gradient"></div>--}}
-            <img src="{{ $image }}" alt="">
+            <img class="image-self" src="{{ $image }}" alt="">
         </div>
         <svg height="0" width="0" viewBox="0 0 500 500">
             <defs>

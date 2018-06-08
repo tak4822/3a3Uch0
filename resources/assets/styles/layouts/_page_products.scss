@@ -238,24 +238,26 @@ canvas {
   }
 
   button {
-    width: 12px;
+    width: 13px;
     height: 13px;
+    margin: 0;
+    padding: 0;
     background: white;
     margin-right: 25px;
     transition: all 0.6s ease-out;
     cursor: pointer;
     @media screen and (min-width: $tablet) {
-      width: 17px;
       height: 18px;
+      width: 18px;
       margin-right: 40px;
     }
     @media screen and (min-width: $tablet-bg) {
       width: 22px;
-      height: 23px;
+      height: 22px;
       margin-right: 60px;
     }
     @media screen and (min-width: $desktop-sm) {
-      width: 14px;
+      width: 15px;
       height: 15px;
     }
 

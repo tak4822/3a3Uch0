@@ -23,6 +23,7 @@
   }
 
   .form {
+    margin-top: 30px;
     @media screen and (min-width: $desktop-sm) {
       width: 50%;
       margin-top: 40px;
@@ -52,10 +53,20 @@
             height: 170px;
             font-size: 0.9rem;
             border: none;
+            background: transparent;
 
             &:focus {
               outline: none;
             }
+          }
+        }
+
+        .wpcf7-form-control-wrap {
+          position: relative;
+
+          .wpcf7-not-valid-tip {
+            margin-top: -7px;
+            font-size: 0.7rem;
           }
         }
 
@@ -96,14 +107,14 @@
         &.type {
           .select-arrow {
             opacity: 0;
-            width: 20px;
-            height: 20px;
+            width: 15px;
+            height: 15px;
             position: absolute;
             background-image: url('../images/arrow_select.svg');
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
-            top: 15px;
+            top: 18px;
             right: 20px;
           }
 

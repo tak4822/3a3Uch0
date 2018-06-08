@@ -18,9 +18,16 @@
     transition: all 1s ease-out;
 
     .cls-1 {
+      transition: all 1.2s ease;
       fill: none;
       stroke: #fff;
       stroke-width: 5px;
+    }
+
+    &:hover {
+      .cls-1 {
+        stroke: $brand-primary;
+      }
     }
   }
 

@@ -1,9 +1,13 @@
 export default function() {
-  $('.field').on('click', function() {
-    $(this).find('.form-label').css({
-      'font-size': '0.9rem',
-      'top': '-8px',
-    })
+  $('.wpcf7-form-control').on('focus', function() {
+    console.log('heyy');
+    const $field = $(this).closest('.field');
+    if(!$field.hasClass('type')) {
+      $field.find('.form-label').css({
+        'font-size': '0.9rem',
+        'top': '-7px',
+      })
+    }
   })
 
   $('.field').on('keypress', function() {
